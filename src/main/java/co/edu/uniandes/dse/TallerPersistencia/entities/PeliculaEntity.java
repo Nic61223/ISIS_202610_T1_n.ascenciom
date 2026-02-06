@@ -9,9 +9,11 @@ import lombok.Data;
 @Data
 @Entity
 public class PeliculaEntity extends BaseEntity {
+    
     private Long id;
     private String titulo;
     private String anioLanzamiento;
-        @ManyToOne( mappedBy = "director")
-     private director director;
+    
+    @ManyToOne
+    private DirectorEntity director;
 }

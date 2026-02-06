@@ -13,9 +13,9 @@ public class DirectorEntity extends BaseEntity{
     private String nombre;
     private String biografia;
 
-    @OneToMany( mappedBy = "peliculas")
+    @OneToMany( mappedBy = "director")
      private java.util.List<PeliculaEntity> peliculas;
-     
+
 
 
     
